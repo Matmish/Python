@@ -6,7 +6,7 @@ from pydantic import BaseModel
 class STasksAdd(BaseModel):
     # Class for init tasks
     name: str
-    description: Optional[str]
+    description: Optional[str] = None
 
 
 class Tasks(STasksAdd):
