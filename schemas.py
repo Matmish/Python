@@ -12,3 +12,7 @@ class STasksAdd(BaseModel):
 class Tasks(STasksAdd):
     # Class for DataBase ID
     id: int
+
+class STaskId(BaseModel):
+    ok: bool = True
+    task_id: int
